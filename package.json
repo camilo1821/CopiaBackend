@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "scripts": { 
+    "dev":"node --watch app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,10 +16,10 @@
     "cors": "2.8.5",
     "express": "4.19.2",
     "express-session": "1.18.0",
-    "mongoose": "^8.4.1",
-    "multer": "^1.4.5-lts.1",
+    "mongoose": "8.4.1",
+    "multer": "1.4.5-lts.1",
     "nodemailer": "6.9.13",
     "sha256": "0.2.0",
-    "sweetalert2": "^11.6.13"
+    "sweetalert2": "11.6.13"
   }
 }

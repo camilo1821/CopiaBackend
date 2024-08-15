@@ -35,9 +35,9 @@ app.all('*',function(req, res, next){
 
 const mongoose = require("mongoose")
 
+//"mongodb://127.0.0.1:27017/"
 
-
-mongoose.connect("mongodb://127.0.0.1:27017/" + config.bd, {}).then(
+mongoose.connect("mongodb://27017/mongo" + config.bd, {}).then(
     ()=>console.log("connected")
 ).catch((error)=>{
     console.log(error)
@@ -67,7 +67,7 @@ var session = require("express-session")({
     cookie: {path:"/",httpOnly:true, maxAge: config.maxage},
     name: config.nombrecookie,
     rolling:true,
-    store:MongoStore.create({mongoUrl:"mongodb://127.0.0.1:27017/"+config.bd+"cookies"})
+    store:MongoStore.create({mongoUrl:"mongodb://27017/mongo"+config.bd+"cookies"})
 })
 
 app.use(session)

@@ -4,8 +4,8 @@ config.puerto=3000
 config.bd='OdontoHM'
 
 config.origin =[
-    "http://localhost:51547",
-    "http://localhost:3000"
+    "http://0.0.0.0:4200",
+    "http://0.0.0.0:3000"
 ]
 
 config.palabraClave="alsdjkasdkjasdkajshdasd6t87679y86gasd8asd6as8d"
